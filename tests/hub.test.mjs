@@ -52,3 +52,11 @@ test("local card artwork referenced by the hub exists", () => {
     assert.ok(existsSync(resolve(rootDir, source)), `${source} should exist`);
   }
 });
+
+test("Natan is the central hero character", () => {
+  const html = readFileSync(hubPath, "utf8");
+  const heroMatch = html.match(/<img class="guide" src="\.\/([^"]+)" alt="" \/>/);
+
+  assert.ok(heroMatch, "expected a central hero guide image");
+  assert.equal(heroMatch[1], "safari-de-sons/assets/images/natan-jungle.png");
+});
