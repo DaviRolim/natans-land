@@ -27,6 +27,10 @@ const projects = [
   {
     title: "Natan e a Escova da Floresta",
     url: "https://davirolim.github.io/natan-escova-floresta/"
+  },
+  {
+    title: "Natan vs Goliath",
+    url: "https://davirolim.github.io/natan-vs-goliath/"
   }
 ];
 

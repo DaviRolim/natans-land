@@ -297,6 +297,10 @@
         grid-column: span 3;
       }
 
+      .project-card.wide {
+        grid-column: span 6;
+      }
+
       .project-card:focus-visible {
         outline: 5px solid rgb(255 215 106 / 86%);
         outline-offset: 5px;
@@ -504,6 +508,13 @@
         }
       }
 
+      @media (min-width: 901px) {
+        .project-card.wide .card-body {
+          max-width: 460px;
+          background: linear-gradient(90deg, rgb(255 250 240 / 94%) 55%, rgb(255 250 240 / 0%));
+        }
+      }
+
       @media (max-width: 900px) {
         .hero {
           grid-template-columns: 1fr;
@@ -521,7 +532,8 @@
 
         .project-card,
         .project-card:nth-child(1),
-        .project-card:nth-child(2) {
+        .project-card:nth-child(2),
+        .project-card.wide {
           grid-column: span 3;
         }
       }
@@ -543,7 +555,8 @@
 
         .project-card,
         .project-card:nth-child(1),
-        .project-card:nth-child(2) {
+        .project-card:nth-child(2),
+        .project-card.wide {
           min-height: 350px;
           grid-column: auto;
           transform: none;
@@ -596,7 +609,7 @@
       <section aria-labelledby="projects-title">
         <div class="section-top">
           <h2 id="projects-title">Choose an adventure</h2>
-          <div class="count-pill">5 places open</div>
+          <div class="count-pill">6 places open</div>
         </div>
 
         <div class="project-grid">
@@ -701,6 +714,27 @@
               <span class="tag">Storybook</span>
               <h3>Natan e a Escova da Floresta</h3>
               <p>Read the forest toothbrush adventure page by page.</p>
+              <span class="open-link">Abrir</span>
+            </div>
+          </a>
+
+          <a
+            class="project-card wide"
+            style="--tilt: -0.5deg; --glow: rgb(255 201 60 / 62%); --tag: #ffc93c"
+            href="https://davirolim.github.io/natan-vs-goliath/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Natan vs Goliath"
+          >
+            <img
+              class="card-art"
+              src="./natan-vs-goliath/assets/images/natan-vs-goliath-card.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <span class="tag">Boss battle</span>
+              <h3>Natan vs Goliath</h3>
+              <p>Be the lion hero, dodge the giant, and bonk Goliath with a sling.</p>
               <span class="open-link">Abrir</span>
             </div>
           </a>
