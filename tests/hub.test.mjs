@@ -29,7 +29,7 @@ const projects = [
     url: "https://davirolim.github.io/natan-escova-floresta/"
   },
   {
-    title: "Natan vs Goliath",
+    title: "Natan vs Golias",
     url: "https://davirolim.github.io/natan-vs-goliath/"
   }
 ];
